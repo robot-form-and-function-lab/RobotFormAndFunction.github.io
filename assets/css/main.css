@@ -2653,7 +2653,9 @@ input, select, textarea {
         margin: 2rem 0;
     }
     .video.main {
-        margin: 2rem 0;
+		display: block;
+		margin: 4rem 0;
+		width: 100%;
     }
 }
 
