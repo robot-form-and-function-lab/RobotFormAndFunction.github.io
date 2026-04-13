@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Internal</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		#protectedContent {
+			display: none;
+		}
+	</style>
+
+	<script>
+		(function () {
+			var expectedPassword = "robots4life";
+			var enteredPassword = prompt("Enter lab access code:");
+
+			document.addEventListener("DOMContentLoaded", function () {
+				if (enteredPassword === expectedPassword) {
+					var protectedContent = document.getElementById("protectedContent");
+					if (protectedContent) {
+						protectedContent.style.display = "block";
+					}
+				} else {
+					document.body.innerHTML = `
+						<div style="font-family: sans-serif; text-align: center; padding: 4rem;">
+							<h1>Access denied</h1>
+							<p>This section is intended for current lab members.</p>
+						</div>
+					`;
+				}
+			});
+		})();
+	</script>
+</head>
+
+<body class="is-preload">
+
+	<div id="protectedContent">
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Internal</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../research/index.html">Research</a></li>
+					<li><a href="../equipment.html">Equipment</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../news.html">News</a></li>
+					<li><a href="../people.html">People</a></li>
+					<li><a href="../opportunities.html">Opportunities</a></li>
+					<li><a href="../contact.html">Contact</a></li>
+					<li class="active"><a href="index.html">Internal</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://bsky.app/profile/rffl-ub.bsky.social" class="icon brands fa-twitter"><span
+								class="label">Bluesky</span></a></li>
+					<li><a href="https://github.com/robot-form-and-function-lab" class="icon brands fa-github"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+				<section class="post">
+					<header class="major">
+						<h1>Internal Resources</h1>
+						<p>This section is intended for current lab members.<br />
+							Use this page as a hub for onboarding, procedures,<br />
+							setups, documentation, and shared lab resources.</p>
+					</header>
+				</section>
+
+				<!-- Onboarding -->
+				<section class="post">
+					<header class="major">
+						<a href="onboarding.html">
+							<h1>Onboarding</h1>
+						</a>
+						<p>Start here for new lab members. Include first-week tasks,<br />
+							account setup, required trainings, lab expectations,<br />
+							and the basic structure of how the lab operates.</p>
+					</header>
+				</section>
+
+				<!-- Setup -->
+				<section class="post">
+					<header class="major">
+						<a href="setup.html">
+							<h1>Software and Hardware Setup</h1>
+						</a>
+						<p>Document development environments, repository access,<br />
+							board setup, software installation, programming tools,<br />
+							and common debugging steps for lab systems.</p>
+					</header>
+				</section>
+
+				<!-- Procedures -->
+				<section class="post">
+					<header class="major">
+						<a href="procedures.html">
+							<h1>Lab Procedures</h1>
+						</a>
+						<p>Use this section for equipment use guidelines, fabrication workflows,<br />
+							data organization, file naming, safety notes, checkout procedures,<br />
+							and other recurring lab practices.</p>
+					</header>
+				</section>
+
+				<!-- Documents -->
+				<section class="post">
+					<header class="major">
+						<a href="documents.html">
+							<h1>Shared Documents</h1>
+						</a>
+						<p>Keep links here to internal references such as templates,<br />
+							meeting expectations, paper writing guidance, poster templates,<br />
+							presentation resources, and internal checklists.</p>
+					</header>
+				</section>
+
+				<!-- Note -->
+				<section class="post">
+					<header class="major">
+						<p><strong>Note:</strong> This section is lightly access-restricted and should not include
+							passwords, credentials, sensitive personal information, or confidential material.</p>
+					</header>
+				</section>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
