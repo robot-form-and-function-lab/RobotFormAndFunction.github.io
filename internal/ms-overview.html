@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>MS Program Overview</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+
+    <style>
+        #protectedContent {
+            display: none;
+        }
+    </style>
+
+    <script>
+        (function () {
+            var expectedPassword = "robots4life";
+            var enteredPassword = prompt("Enter lab access code:");
+
+            document.addEventListener("DOMContentLoaded", function () {
+                if (enteredPassword === expectedPassword) {
+                    document.getElementById("protectedContent").style.display = "block";
+                } else {
+                    document.body.innerHTML = `
+						<div style="font-family: sans-serif; text-align: center; padding: 4rem;">
+							<h1>Access denied</h1>
+							<p>This section is intended for current lab members.</p>
+						</div>
+					`;
+                }
+            });
+        })();
+    </script>
+</head>
+
+<body class="is-preload">
+
+    <div id="protectedContent">
+
+        <div id="wrapper">
+
+            <header id="header">
+                <a href="index.html" class="logo">Internal</a>
+            </header>
+
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../research/index.html">Research</a></li>
+                    <li><a href="../equipment.html">Equipment</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../news.html">News</a></li>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../opportunities.html">Opportunities</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li class="active"><a href="index.html">Internal</a></li>
+                </ul>
+            </nav>
+
+            <div id="main">
+
+                <section class="post">
+                    <header class="major">
+                        <h1>MAE MS Program Overview</h1>
+                        <p>Thesis Option &mdash; One Page Summary</p>
+                    </header>
+
+                    <p>
+                        <strong>Note:</strong> This page provides a high-level summary. Always refer to official MAE
+                        program documentation for definitive requirements.
+                    </p>
+
+                    <h2>Course Requirements</h2>
+                    <ul>
+                        <li>At least 21 credits must be from within the MAE department (including research credits)</li>
+                        <li>At least 5 MAE classes (15 credits)</li>
+                        <li>6 credits from MAE560 (MS Thesis)</li>
+                        <li>Up to 9 credits (3 classes) may be outside MAE (may require GSC approval)</li>
+                    </ul>
+
+                    <h2>Typical Timeline</h2>
+
+                    <h3>Semester 1 (Fall)</h3>
+                    <ul>
+                        <li>Typically 3–4 classes (depending on immigration status)</li>
+                    </ul>
+
+                    <h3>Semester 2</h3>
+                    <ul>
+                        <li>Typically 3–4 classes</li>
+                    </ul>
+
+                    <h3>Semester 3</h3>
+                    <ul>
+                        <li>3 credits of MAE560 (MS Thesis)</li>
+                        <li>1-2 classes</li>
+                    </ul>
+
+                    <h3>Semester 4</h3>
+                    <ul>
+                        <li>3 credits of MAE560 (MS Thesis)</li>
+                        <li>0-1 classes</li>
+                    </ul>
+
+                    <h2>Graduate Seminar</h2>
+                    <ul>
+                        <li>All MS students must register for one semester of the graduate seminar</li>
+                    </ul>
+
+                    <h2>Course Planning</h2>
+                    <ul>
+                        <li>Talk with other graduate students</li>
+                        <li>Use the <code>#course-planning</code> Slack channel</li>
+                    </ul>
+
+                    <h2>Registering for MAE560</h2>
+                    <p>
+                        Registration requires a forced registration form. The graduate coordinator will register
+                        students after:
+                    </p>
+                    <ul>
+                        <li>Departmental agreement is completed</li>
+                        <li>Advisor approval is established</li>
+                    </ul>
+
+                    <h2>Research</h2>
+                    <p>
+                        Refer to the graduate onboarding document for expectations and structure.
+                    </p>
+
+                    <h2>Thesis Defense</h2>
+                    <ul>
+                        <li>Requires 3 MAE faculty members</li>
+                        <li>Thesis must be sent to the committee at least one week prior</li>
+                        <li>
+                            Must use the UB ETD template. A LaTeX version is available
+                            <a href="https://buffalo.box.com/s/illlzb52c0qv8trazp7t4zi5muzzbvh4"
+                                target="_blank">here</a>.
+                        </li>
+                        <li>Defense must be publicly announced via the graduate coordinator</li>
+                    </ul>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
