@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Undergraduate Onboarding</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		#protectedContent {
+			display: none;
+		}
+	</style>
+
+	<script>
+		(function () {
+			var expectedPassword = "robots4life";
+			var enteredPassword = prompt("Enter lab access code:");
+
+			document.addEventListener("DOMContentLoaded", function () {
+				if (enteredPassword === expectedPassword) {
+					var protectedContent = document.getElementById("protectedContent");
+					if (protectedContent) {
+						protectedContent.style.display = "block";
+					}
+				} else {
+					document.body.innerHTML = `
+						<div style="font-family: sans-serif; text-align: center; padding: 4rem;">
+							<h1>Access denied</h1>
+							<p>This section is intended for current lab members.</p>
+						</div>
+					`;
+				}
+			});
+		})();
+	</script>
+</head>
+
+<body class="is-preload">
+
+	<div id="protectedContent">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Internal</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../research/index.html">Research</a></li>
+					<li><a href="../equipment.html">Equipment</a></li>
+					<li><a href="../publications.html">Publications</a></li>
+					<li><a href="../news.html">News</a></li>
+					<li><a href="../people.html">People</a></li>
+					<li><a href="../opportunities.html">Opportunities</a></li>
+					<li><a href="../contact.html">Contact</a></li>
+					<li class="active"><a href="index.html">Internal</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://bsky.app/profile/rffl-ub.bsky.social" class="icon brands fa-twitter"><span
+								class="label">Bluesky</span></a></li>
+					<li><a href="https://github.com/robot-form-and-function-lab" class="icon brands fa-github"><span
+								class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<section class="post">
+					<header class="major">
+						<h1>Undergraduate Onboarding</h1>
+						<p>Robot Form and Function Lab<br />
+						Version 1.0 &mdash; July 13, 2025</p>
+					</header>
+
+					<p><strong>Required reading:</strong> All new undergraduate lab members should read this page and complete the acknowledgment workflow at the bottom.</p>
+
+					<h2>Overview</h2>
+					<p>
+						This document is meant to be a primer and a starting point for mentoring you in research skills,
+						not just assigning tasks or leaving you to figure it out on your own. It is also something worth
+						revisiting throughout your time in the lab. As you gain experience and confidence, parts of this
+						document will make more sense or become more relevant.
+					</p>
+					<p>
+						Undergraduate research is a key part of how we build and test new ideas in this lab. Your time
+						here is a chance to learn how research happens, contribute meaningfully to a project, and develop
+						technical skills that go beyond classroom experience.
+					</p>
+					<p>
+						It is likely that you will be working with a team or with a graduate student.
+					</p>
+
+					<h2>Research Primer</h2>
+					<p>
+						Research in the Robot Form and Function Lab focuses on form and function, largely where engineered
+						constructs meet computational intelligence. This includes intersections of design and control,
+						hardware and software, and applications in robotics, biomechanics, and embedded systems.
+					</p>
+					<p>
+						You are expected to work on both experimental methods and basic modeling or analysis. We rarely do
+						purely theoretical work, so you will often build, test, measure, and interpret data. Depending on
+						your project, you may work with code, hardware, CAD, sensors, or mechanical systems.
+					</p>
+					<p>
+						You are not expected to write a paper on day one, but you should begin learning how your project
+						connects to broader research. Ask questions like:
+					</p>
+					<ul>
+						<li>What is this robot or system designed to do?</li>
+						<li>Why are we measuring this?</li>
+						<li>How does this relate to robots in other research papers?</li>
+					</ul>
+					<p>
+						We will help guide you toward relevant readings or background materials. Take time to understand
+						figures, not just text. Videos and images are often more useful than reading full papers right away.
+					</p>
+
+					<h2>Building Skills as a Researcher</h2>
+					<p>Start with the basics:</p>
+					<ul>
+						<li>Keep a lab notebook or digital log. Track what you do each day, questions you have, and things that worked or did not.</li>
+						<li>Understand your role. You will likely be working with a grad student or project lead. Ask how your tasks support the bigger picture.</li>
+						<li>Document code or hardware builds. Comment your code, label your circuits, and take photos when appropriate. Good documentation is part of good research.</li>
+						<li>Ask questions. Do not guess what your mentor wants. It is okay not to know. Your job is to learn.</li>
+					</ul>
+
+					<h2>Reading and Publication Quality</h2>
+					<p>
+						While you are conducting research, please be aware that not all publications have the same merit.
+						Some journals have rigorous peer-review processes and are widely respected in the field, while
+						others prioritize quantity over quality, charge high fees, and publish work with little to no review.
+					</p>
+					<p>A few general rules:</p>
+					<ul>
+						<li>If a paper is published in a journal you have never heard of, look it up and check whether it is indexed in reputable databases.</li>
+						<li>Be wary of journals that aggressively solicit submissions or promise extremely fast publication.</li>
+						<li>You may not receive these invitations now, but you may one day.</li>
+						<li>Consider whether the journal is associated with a reputable publisher such as IEEE, Springer, Elsevier, ACM, or Wiley.</li>
+					</ul>
+					<p>
+						Reading broadly is good, but citing low-quality or unreviewed work in your own papers can weaken
+						your research. Build your judgment over time.
+					</p>
+
+					<h2>Mentor and Mentee Expectations</h2>
+					<p>
+						Most lab communication happens on Slack. Make sure you are in the lab workspace and respond to
+						messages in a reasonable timeframe.
+					</p>
+					<p>You are expected to:</p>
+					<ul>
+						<li>Show up when you say you will.</li>
+						<li>Let us know when you are blocked or have questions.</li>
+						<li>Be proactive in asking for clarification or next steps.</li>
+					</ul>
+					<p>
+						There is no penalty for not knowing how to do something. Asking is part of the job.
+					</p>
+
+					<h2>Authorship and Paper Writing</h2>
+					<p>
+						While you are not expected to lead a research paper as an undergraduate, you may contribute to one
+						if your work supports it. If so, authorship will be discussed early and transparently.
+					</p>
+					<p>
+						If you help with writing, the lab uses LaTeX and Overleaf. Ask for help setting this up.
+					</p>
+					<p>
+						For documentation such as protocols, procedures, or figure captions, you may be asked to write
+						clearly and concisely, and you will receive feedback.
+					</p>
+
+					<h2>Lab Safety</h2>
+					<p>
+						You are expected to work safely in the lab. This means only using equipment that you know how to use
+						and not working in the lab when you are too tired to work carefully.
+					</p>
+					<p>
+						Students should also complete Environmental Health and Safety training in order to work in the lab.
+					</p>
+
+                    <h2>Group Meetings</h2>
+                    <p>
+                        Group meetings are relatively low stakes. You will usually present a brief slide summarizing
+                        your
+                        progress and goals. This keeps everyone engaged in the lab, asking questions, and helping one
+                        another. It is also a chance to practice communication skills.
+                    </p>
+                    <p>
+                        The group meeting schedule is set at the beginning of each semester, and you are expected to
+                        attend weekly.
+                    </p>
+
+                    <ul class="actions">
+                        <li>
+                            <a href="https://buffalo.box.com/s/pi1eo3o9cy2pgowj7mghwrmn26gh1koo" class="button"
+                                target="_blank">
+                                Download Group Meeting Template
+                            </a>
+                        </li>
+                    </ul>
+
+					<h2>Archiving Data</h2>
+					<p>
+						When you finish up in the lab, whether by graduating or moving on, all of your data should be
+						archived in the appropriate formats and locations with a <code>ReadMe.txt</code> file.
+					</p>
+
+					<h3>Archiving on UB Box</h3>
+					<p>
+						We store active and archived data on the Robot Form and Function Lab UB Box account. Go to the lab
+						folder, then the Projects subfolder, and create a folder for yourself and your project.
+					</p>
+
+					<h3>Archiving on the Server</h3>
+					<p>
+						The Box folder can be used for projects and papers, while the server can be used for raw data such as
+						high-speed video files.
+					</p>
+					<p>Server paths:</p>
+					<pre><code>\\afs.acsu.buffalo.edu\sens_research_mae\ryans
+smb://afs.acsu.buffalo.edu/sens_research_mae/ryans</code></pre>
+					<p>
+						Your username should be <code>ad\</code> followed by your username.
+					</p>
+
+					<h2>GitHub</h2>
+					<p>
+						You are expected to learn how to use GitHub. The lab wiki uses GitHub, and many archival papers
+						require public access to data and software through GitHub repositories.
+					</p>
+
+					<h2>Undergraduate Research Realities</h2>
+					<p>You are here to learn and contribute, and you get out what you put in. That means:</p>
+					<ul>
+						<li>Try things, break things, and learn from it.</li>
+						<li>Take ownership of your project and time.</li>
+						<li>Ask how your work fits into the bigger picture.</li>
+						<li>Be proactive, curious, and communicative.</li>
+					</ul>
+					<p>
+						We are excited to have you here. Your work matters. If you are unsure about something, technical or
+						otherwise, please reach out. That is what mentorship is for.
+					</p>
+
+					<h2>Access to the Lab, UB Box, and Equipment</h2>
+					<p>
+						Access to the lab is by swipe card. If you do not have swipe card access, UB Box access, or access
+						to the machines that control equipment, let Dr. St. Pierre know.
+					</p>
+
+					<h3>Access to the Lab</h3>
+					<p>
+						Lab swipe access is managed by MAE and SENS. An online form must be filled out on your behalf, which
+						requires:
+					</p>
+					<ul>
+						<li>Name</li>
+						<li>UBIT name</li>
+						<li>Person number</li>
+						<li>Graduation date</li>
+					</ul>
+
+					<h3>Access to UB Box and Equipment</h3>
+					<p>
+						Access to shared UB Box files and equipment is managed through a SENS user group. An email must be
+						sent on your behalf to add you, which requires:
+					</p>
+					<ul>
+						<li>Name</li>
+						<li>UBIT name</li>
+					</ul>
+
+					<h2>Resigning from Research</h2>
+					<p>
+						If you are not coming to group meetings, not showing up to the lab, and are inactive on Slack, that
+						is taken as an implicit resignation, and your access may be removed.
+					</p>
+					<p>
+						You are permitted to resign from research at any time, and there are no hard feelings. Sometimes
+						research is not a good fit, or you may not be able to commit during a given semester. Being open
+						and honest is much better than disappearing.
+					</p>
+
+					<hr />
+
+					<h2>Verification</h2>
+					<p>
+						After reading this document, complete the lab acknowledgment workflow below.
+					</p>
+
+					<ul class="actions">
+						<li><a href="#" class="button primary">Slack Acknowledgment Workflow</a></li>
+					</ul>
+
+					<p>
+						<strong>Placeholder:</strong> Replace this button link with the Slack workflow URL once it is ready.
+					</p>
+
+				</section>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

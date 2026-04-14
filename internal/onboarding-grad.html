@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Graduate Onboarding</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
+    </noscript>
+
+    <style>
+        #protectedContent {
+            display: none;
+        }
+    </style>
+
+    <script>
+        (function () {
+            var expectedPassword = "robots4life";
+            var enteredPassword = prompt("Enter lab access code:");
+
+            document.addEventListener("DOMContentLoaded", function () {
+                if (enteredPassword === expectedPassword) {
+                    var protectedContent = document.getElementById("protectedContent");
+                    if (protectedContent) {
+                        protectedContent.style.display = "block";
+                    }
+                } else {
+                    document.body.innerHTML = `
+						<div style="font-family: sans-serif; text-align: center; padding: 4rem;">
+							<h1>Access denied</h1>
+							<p>This section is intended for current lab members.</p>
+						</div>
+					`;
+                }
+            });
+        })();
+    </script>
+</head>
+
+<body class="is-preload">
+
+    <div id="protectedContent">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">Internal</a>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../research/index.html">Research</a></li>
+                    <li><a href="../equipment.html">Equipment</a></li>
+                    <li><a href="../publications.html">Publications</a></li>
+                    <li><a href="../news.html">News</a></li>
+                    <li><a href="../people.html">People</a></li>
+                    <li><a href="../opportunities.html">Opportunities</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li class="active"><a href="index.html">Internal</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://bsky.app/profile/rffl-ub.bsky.social" class="icon brands fa-twitter"><span
+                                class="label">Bluesky</span></a></li>
+                    <li><a href="https://github.com/robot-form-and-function-lab" class="icon brands fa-github"><span
+                                class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+
+                <section class="post">
+                    <header class="major">
+                        <h1>Graduate Onboarding</h1>
+                        <p>Robot Form and Function Lab<br />
+                            Version 2.1 &mdash; August 12, 2025</p>
+                    </header>
+
+                    <p><strong>Required reading:</strong> All new graduate lab members should read this page and
+                        complete the acknowledgment workflow at the bottom.</p>
+
+                    <h2>Overview</h2>
+                    <p>
+                        This document is meant to be a primer and a starting point for how I, as your advisor, begin
+                        mentoring you in research skills, rather than simply sending you into the lab and telling you to
+                        make robots. It may also be helpful to return to this document throughout your graduate career.
+                    </p>
+                    <p>
+                        This document is meant to be revisited over time. Some things will make more sense the more you
+                        revisit them and the more you progress through graduate school.
+                    </p>
+
+                    <h2>Research Primer</h2>
+                    <p>
+                        Research in the Robot Form and Function Lab focuses on form and function, largely where
+                        engineered
+                        constructs meet computational intelligence. This may look like the intersection of design and
+                        control or hardware and software, applied to robotics, biomechanics, and embedded systems.
+                    </p>
+                    <p>
+                        My expectation is that you will learn skills in both experimental methods and mathematical
+                        modeling. You are expected to do both. Robotics requires hardware verification, or high-fidelity
+                        simulation, which we generally do not do.
+                    </p>
+                    <p>
+                        To start, we need to understand how to read the research literature and where your work fits
+                        within
+                        it. To push the boundaries of research, you need to know where those boundaries are.
+                    </p>
+
+                    <ol>
+                        <li>
+                            Think early about what you want the title of your MS thesis or PhD dissertation to be. It
+                            should be descriptive and encompass the work, and you can refine it over time.
+                        </li>
+                        <li>
+                            List a set of questions that you are trying to answer with your research. You can think of
+                            these as the journal papers that may come out of your work. Keep them high level at first.
+                        </li>
+                        <li>
+                            Based on these questions and your overall title, come up with a set of keywords and metrics
+                            of
+                            interest. These do not need to be fixed forever, just useful for a first pass.
+                        </li>
+                        <li>
+                            Set up Google Scholar alerts with these keywords. You can refine them later if they are too
+                            broad or too narrow.
+                        </li>
+                        <li>
+                            Use tools such as Google Scholar and other databases to gather relevant references. Begin
+                            compiling them in a citation manager of your choice.
+                        </li>
+                        <li>
+                            Create a spreadsheet database based on the metrics you define along with the references you
+                            are
+                            gathering. Build a method for analyzing this data.
+                        </li>
+                        <li>
+                            Highlight groups that are particularly strong in the relevant research. These are the people
+                            you want to talk to at conferences.
+                        </li>
+                    </ol>
+
+                    <h3>Examples of Keywords and Metrics</h3>
+                    <ul>
+                        <li><strong>Keywords:</strong> jumping robots, jumping insects, impulsive mechanisms,
+                            multi-material mechanisms</li>
+                        <li><strong>Metrics:</strong> mass, length, takeoff velocity, kinetic energy, energy density,
+                            power, number of actuators, acceleration time, acceleration</li>
+                    </ul>
+
+                    <h2>Reading and Publication Quality</h2>
+                    <p>
+                        Not all publications have the same merit. Some journals have rigorous peer review and are widely
+                        respected in the field, while others prioritize quantity, charge high fees, and publish with
+                        very
+                        little review.
+                    </p>
+                    <p>A few general rules:</p>
+                    <ul>
+                        <li>If a paper is published in a journal you have never heard of, look it up and check whether
+                            it is indexed in reputable databases.</li>
+                        <li>Be wary of journals that aggressively solicit submissions or promise extremely fast
+                            publication.</li>
+                        <li>Consider whether the journal is associated with a reputable publisher such as IEEE,
+                            Springer, Elsevier, ACM, or Wiley.</li>
+                    </ul>
+                    <p>
+                        Reading broadly is good, but citing low-quality or unreviewed work in your own papers can weaken
+                        your research. Use judgment and develop your internal filter over time.
+                    </p>
+
+                    <h2>Lab Notebooks</h2>
+                    <p>
+                        A lab notebook is a living document designed to be compassionate to your future self. It is your
+                        external memory, something that captures enough detail so that months or years later, you or
+                        someone else could pick up where you left off without guesswork.
+                    </p>
+                    <p>
+                        Your notebook should include process descriptions, materials, methods, and observations, all of
+                        which you will eventually need for publications, reports, or project handoffs.
+                    </p>
+
+                    <h3>What to Record</h3>
+                    <ul>
+                        <li><strong>Procedures:</strong> step-by-step descriptions of what you did, including deviations
+                            from a planned method.</li>
+                        <li><strong>Materials and Sources:</strong> include manufacturers, model numbers, and key
+                            specifications.</li>
+                        <li><strong>Data:</strong> raw numbers, observations, and qualitative notes from experiments.
+                        </li>
+                        <li><strong>Analysis:</strong> first impressions, calculations, and summaries of what the data
+                            may mean.</li>
+                        <li><strong>Figures and Plots:</strong> if you gather data and plot it, preserve the plot and
+                            record your interpretation immediately.</li>
+                        <li><strong>Ideas and Questions:</strong> even quick, incomplete thoughts can be useful later.
+                        </li>
+                    </ul>
+
+                    <h3>Format and Medium</h3>
+                    <ul>
+                        <li>You may use a bound paper notebook or a digital equivalent.</li>
+                        <li>Bound notebooks are preferred for physical experiments; digital formats are fine for
+                            simulation or coding-heavy projects.</li>
+                        <li>Date every entry.</li>
+                        <li>Use clear headings so entries are easy to find.</li>
+                        <li>Attach printouts, sketches, or photographs when relevant.</li>
+                    </ul>
+
+                    <h3>Good Habits</h3>
+                    <ul>
+                        <li>Write as you work, not at the end of the week.</li>
+                        <li>Assume your future self or someone else in the lab will need to repeat your work based only
+                            on your notes.</li>
+                        <li>Record failures as carefully as successes.</li>
+                    </ul>
+
+                    <h2>Mentor and Mentee Expectations</h2>
+                    <p>
+                        My expectation is that communication is open and frequent. Most lab communication happens on
+                        Slack.
+                        For most graduate students, a weekly meeting is set up during the semester and summer, but do
+                        not
+                        wait until that meeting to ask questions.
+                    </p>
+                    <p>
+                        Many tasks in graduate school are unlike anything you may have done before, including writing
+                        research papers, creating supplemental materials, and conducting independent research. You are
+                        expected to ask questions and seek feedback rather than trying to guess what I want.
+                    </p>
+                    <p>
+                        Often, I do not have all of the answers either, and we may need to work toward a solution
+                        together. This is normal and expected. Asking for help is not failure.
+                    </p>
+                    <p>
+                        I also expect you to be proactive in your communication and research.
+                    </p>
+
+                    <h2>Authorship and Paper Writing</h2>
+                    <p>
+                        Producing research papers is expected during your graduate career. For MS students, the
+                        expectation
+                        is one peer-reviewed paper, either conference or journal. For PhD students, the expectation is
+                        at
+                        least three peer-reviewed papers.
+                    </p>
+
+                    <h3>LaTeX and Overleaf</h3>
+                    <p>
+                        Papers are generally written in LaTeX, using Overleaf for collaboration. Overleaf provides
+                        significant support for writing in LaTeX, and there are many online resources. Ask questions if
+                        you need help.
+                    </p>
+
+                    <h3>Figures</h3>
+                    <p>
+                        Figures in research articles are essential. The goal is for figures to be informative, readable,
+                        and consistent throughout the paper.
+                    </p>
+                    <p>
+                        If you are preparing figures, export them in vector format such as PDF, SVG, or EPS unless the
+                        figure is a photo or another raster image. Ask if you are unsure about formatting.
+                    </p>
+
+                    <h3>Authorship and Credit</h3>
+                    <p>
+                        We follow a contribution-based authorship model. I generally use the CRediT taxonomy to assess
+                        and discuss contributions, including roles such as conceptualization, methodology,
+                        investigation,
+                        writing, supervision, visualization, software, and funding acquisition.
+                    </p>
+                    <p>
+                        We will discuss authorship order early in the writing process and revisit it as the work
+                        evolves.
+                        If you are unsure where you stand, ask.
+                    </p>
+
+                    <h3>Why I Edit Your Writing</h3>
+                    <p>
+                        Expect your writing to go through many rounds of feedback, especially early on. I will edit your
+                        work heavily, not because your ideas are not good, but because scientific writing is a skill
+                        that
+                        takes time to develop.
+                    </p>
+                    <p>
+                        Think of this like code review or prototype iteration. The goal is clarity, structure, and
+                        precision. Good writing is not just about sounding smart. It is about being understood.
+                    </p>
+                    <p>
+                        My expectation is that you take this editing constructively. This is not an attack on you or
+                        your
+                        words. It is about framing your work in the best possible light for reviewers.
+                    </p>
+                    <p>
+                        The goal of writing is to present enough technical detail to make the work reproducible. This
+                        means
+                        you will be asked for makes, models, and specific details of equipment and materials.
+                    </p>
+
+                    <h2>Conferences and Presentations</h2>
+                    <p>
+                        One path to publication is through conferences. The group generally submits to and attends
+                        robotics
+                        conferences such as ICRA, and there is an overview of robotics conferences on the shared Box
+                        folder.
+                    </p>
+                    <p>
+                        If you are preparing for a conference, start planning early enough to meet the deadline. If your
+                        work is accepted, start planning early enough to practice your talk before the conference.
+                    </p>
+
+                    <h2>Lab Safety</h2>
+                    <p>
+                        You are expected to work safely in the lab. This means only using equipment that you know how to
+                        use and not working when you are too tired to do so carefully.
+                    </p>
+                    <p>
+                        Students should also complete Environmental Health and Safety training in order to work in the
+                        lab.
+                    </p>
+
+                    <h2>Group Meetings</h2>
+                    <p>
+                        Group meetings are relatively low stakes. You will usually present a brief slide summarizing
+                        your
+                        progress and goals. This keeps everyone engaged in the lab, asking questions, and helping one
+                        another. It is also a chance to practice communication skills.
+                    </p>
+                    <p>
+                        The group meeting schedule is set at the beginning of each semester, and you are expected to
+                        attend weekly.
+                    </p>
+
+                    <ul class="actions">
+                        <li>
+                            <a href="https://buffalo.box.com/s/pi1eo3o9cy2pgowj7mghwrmn26gh1koo" class="button"
+                                target="_blank">
+                                Download Group Meeting Template
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h2>Archiving Data</h2>
+                    <p>
+                        When finishing up in the lab, whether by graduating or moving on, archive all of your data in
+                        the
+                        appropriate formats and locations with a <code>ReadMe.txt</code> file.
+                    </p>
+
+                    <h3>Archiving on UB Box</h3>
+                    <p>
+                        We store active and archived data on the Robot Form and Function Lab UB Box account. Go to the
+                        lab
+                        folder, then the Projects subfolder, and create a folder for yourself and your project.
+                    </p>
+
+                    <h3>Archiving on the Server</h3>
+                    <p>
+                        The Box folder can be used for projects and papers, while the server can be used for raw data
+                        such as
+                        high-speed video files.
+                    </p>
+                    <p>Server paths:</p>
+                    <pre><code>\\afs.acsu.buffalo.edu\sens_research_mae\ryans
+smb://afs.acsu.buffalo.edu/sens_research_mae/ryans</code></pre>
+                    <p>
+                        Your username should be <code>ad\</code> followed by your username.
+                    </p>
+
+                    <h2>GitHub</h2>
+                    <p>
+                        You are expected to learn how to use GitHub. The lab wiki uses GitHub, and many archival papers
+                        require public access to data and software through GitHub repositories.
+                    </p>
+
+                    <h2>Graduate School Realities</h2>
+                    <p>
+                        The reality of graduate school is that it can be tough. At times, you may feel burnt out, like
+                        you
+                        do not belong, or generally unmoored. Often, that is a sign that something needs to change.
+                    </p>
+                    <p>
+                        I am here to help with those issues to the best of my ability, but you may also need support
+                        from
+                        other people or resources outside the lab.
+                    </p>
+
+                    <hr />
+
+                    <h2>Verification</h2>
+                    <p>
+                        After reading this document, complete the lab acknowledgment workflow below.
+                    </p>
+
+                    <ul class="actions">
+                        <li><a href="#" class="button primary">Slack Acknowledgment Workflow</a></li>
+                    </ul>
+
+                    <p>
+                        <strong>Placeholder:</strong> Replace this button link with the Slack workflow URL once it is
+                        ready.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
